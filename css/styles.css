@@ -33,7 +33,13 @@ hr {
   text-align: center;
   padding-bottom: 40px;
 }
-.awesome__title {
+.title p {
+  padding: 40px 0 110px 0;
+  color: #86878b;
+  font-size: 18px;
+  text-align: center;
+}
+.title {
   font-family: "Raleway";
   font-style: normal;
   font-size: 36px;
@@ -42,7 +48,7 @@ hr {
   align-items: center;
   text-align: center;
 }
-.awesome__item_title {
+.awesome__item__title {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -62,6 +68,8 @@ hr {
 }
 .awesome__item {
   margin-bottom: -50px;
+  flex: 0 1 33.333%;
+  margin: 0px auto;
 }
 /* pricing */
 .pricing {
@@ -71,7 +79,7 @@ hr {
   padding-bottom: 40px;
 }
 
-.pricing__title {
+/* .pricing__title {
   font-family: "Raleway";
   font-style: normal;
   font-size: 36px;
@@ -79,7 +87,7 @@ hr {
   display: block;
   align-items: center;
   text-align: center;
-}
+} */
 .pricing__row {
   display: flex;
   margin: 0 -15px;
