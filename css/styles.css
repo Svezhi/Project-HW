@@ -72,19 +72,21 @@ hr {
   margin: 0 -15px;
   justify-content: space-between;
 }
-
-.pricing__lvl {
+.pricing__item__lvl {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 24px;
   background: #333333;
   color: #ffffff;
   border: 2px solid #f5f5f5;
-  padding: 20px 0;
+  padding: auto;
   width: 370px;
   height: 60px;
 }
-.pricing__price {
+.pricing__item h4 {
+  text-align: center;
+}
+.pricing__item__price {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 36px;
@@ -93,14 +95,14 @@ hr {
   border: 2px solid #f5f5f5;
   padding: 30px 0;
 }
-.pricing__description {
+.pricing__item__description {
   font-size: 18px;
   background: #333333;
   color: gray;
   border: 2px solid #f5f5f5;
   padding: 17px 0;
 }
-.pricing__memory p {
+.pricing__item__memory p {
   font-size: 18px;
   padding: 17px 0;
   color: #86878b;
@@ -111,47 +113,20 @@ hr {
   margin: -20px 0 0 0;
   filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 }
-/* .pricing__column {
-  padding: 0 15px 20px 15px;
-} */
-/* .pricing__column {
-  padding: 0 15 20;
-  position: absolute;
-  width: 370px;
-  height: 510px;
-  left: 170px;
-  top: 2916px;
-} */
-/* Costumers */
-.review {
-  text-align: center;
-  padding: 50px 0 64px 0;
-}
 
-.costumers__title {
-  font-family: "Raleway";
-  font-style: normal;
-  font-size: 36px;
-  line-height: 42px;
-  display: block;
-  align-items: center;
-  text-align: center;
-}
+/* Costumers */
+
 .review__row {
   display: flex;
-}
-.review__column {
-  flex: 0 1 33.333%;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin: -20px -15px;
+  justify-content: space-between;
 }
 .review__text {
   background: #e2e2e2;
   border-radius: 10px;
   color: #86878b;
   font-size: 18px;
-  padding: 37px 0;
+  padding: 38px 30px;
   margin: 0 0 66px 0;
   position: relative;
   text-align: center;
@@ -167,10 +142,21 @@ hr {
   left: 15%;
   bottom: -20px;
 }
-.costumer__name {
+.costumer__info__name {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
   padding-bottom: 30px;
+}
+.costumer__person {
+  display: flex;
+}
+
+.costumer__info p {
+  margin-left: 30px;
+  white-space: nowrap;
+}
+.costumer__info__profession {
+  margin-bottom: 100%;
 }
