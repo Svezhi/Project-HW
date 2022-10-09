@@ -1,6 +1,76 @@
 body {
   font-family: "Raleway";
 }
+/* header */
+
+header {
+  background-color: black;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.header__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+.header__item {
+  margin-right: 70px;
+}
+.header__item:last-child {
+  margin-right: 65px;
+}
+
+.intro {
+  height: 1026px;
+  background-blend-mode: multiply;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/fone2.png);
+}
+/* AXIT */
+h1 {
+  color: white;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  padding-top: 70px;
+}
+.title__axit p::before {
+  content: "";
+  display: block;
+  width: 170px;
+  border: 1px solid #ffffff;
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 42px;
+}
+.title__axit p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  padding-top: 20px;
+}
+.axit__logo {
+  padding-top: 306px;
+}
+
 /* container */
 .container {
   width: 1170px;
