@@ -32,7 +32,7 @@ header {
   margin-right: 70px;
 }
 .header__item:last-child {
-  margin-right: 65px;
+  margin-right: 40px;
 }
 
 .intro {
@@ -228,5 +228,31 @@ hr {
   white-space: nowrap;
 }
 .costumer__info__profession {
-  margin-bottom: 100%;
+  margin-bottom: 200px;
+}
+.footer {
+  height: 164px;
+  background-color: black;
+}
+.footer__nav-list {
+  gap: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 40px;
 }
