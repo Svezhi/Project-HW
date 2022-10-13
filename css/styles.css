@@ -1,101 +1,6 @@
 body {
   font-family: "Raleway";
 }
-/* header */
-
-header {
-  background-color: black;
-}
-.header__container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-.header__nav-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.header__nav-link {
-  text-decoration: none;
-  color: white;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-}
-.header__item {
-  margin-right: 70px;
-}
-.header__item:last-child {
-  margin-right: 40px;
-}
-
-.intro {
-  height: 1026px;
-  background-blend-mode: multiply;
-  background: rgba(0, 0, 0, 0.5);
-  background-image: url(../img/fone2.png);
-}
-/* AXIT */
-h1 {
-  color: white;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 56px;
-  padding-top: 70px;
-}
-.title__axit p::before {
-  content: "";
-  display: block;
-  width: 170px;
-  border: 1px solid #ffffff;
-  background-color: white;
-  margin-top: 40px;
-  margin-bottom: 42px;
-}
-.title__axit p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: white;
-  padding-top: 20px;
-}
-.axit__logo {
-  padding-top: 306px;
-}
-
-/* container */
-.container {
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-/* h3 */
-h3 {
-  font-size: inherit;
-  font-weight: 400;
-  margin-top: 50px;
-}
-/* hr */
-hr {
-  border: none;
-  background-color: #ec7979;
-  height: 1.5px;
-  width: 180px;
-  margin-top: 70px;
-}
-/* Awesome */
-.awesome {
-  text-align: center;
-  padding-bottom: 40px;
-}
 .title p {
   padding: 40px 0 110px 0;
   color: #86878b;
@@ -110,6 +15,219 @@ hr {
   display: block;
   align-items: center;
   text-align: center;
+}
+h1 {
+  color: white;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  padding-top: 70px;
+}
+h3 {
+  font-size: inherit;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+hr {
+  border: none;
+  background-color: #ec7979;
+  height: 1.5px;
+  width: 180px;
+  margin-top: 70px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+/* HEADER */
+.header {
+  background-color: #000000;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header__logo {
+  position: absolute;
+  left: 115px;
+}
+
+.header__nav ul {
+  display: flex;
+}
+
+.header li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 75px;
+}
+
+/* INTRO */
+
+.intro {
+  height: 1026px;
+  background-blend-mode: multiply;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/fone2.png);
+}
+.intro .container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-top: 300px;
+  padding-bottom: 185px;
+}
+
+.intro__title {
+  display: block;
+  width: 670px;
+  height: 168px;
+  margin-top: 10px;
+  margin-bottom: 97px;
+}
+
+.intro h1:after {
+  content: "";
+  display: block;
+  align-items: left;
+  width: 170px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 55px;
+  margin-bottom: 42px;
+}
+
+.intro p {
+  color: #ffffff;
+}
+
+.intro__text {
+  width: 270px;
+  margin-bottom: 42px;
+}
+
+.intro__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 25px;
+  border: 2px #ffffff solid;
+  width: 270px;
+  height: 58px;
+}
+/* FORM INTRO */
+.form__title {
+  margin-top: 35px;
+  margin-bottom: 46px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.form {
+  width: 470px;
+  height: 450px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 370px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  padding-top: 15px;
+}
+
+.form span {
+  color: #ec7979;
+}
+
+.form input[type="text"]::placeholder,
+.form input[type="email"]::placeholder,
+.form input[type="password"]::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #bdbdbd;
+}
+.form input[type="submit"] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 10px 10px;
+  border: none;
+  background-color: #ec7979;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+/* SOCIAL Start */
+.social {
+  background-color: #F8EFEF;
+}
+.social p {
+padding-bottom: 18px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #86878B;
+}
+.social h4 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+padding-top: 30px;
+}
+.social__nav-list {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+ justify-content: flex-end;
+}
+
+/* Awesome */
+.awesome {
+  text-align: center;
+  padding-bottom: 40px;
 }
 .awesome__item h4 {
   font-family: "Open Sans", sans-serif;
@@ -186,12 +304,12 @@ hr {
 
 /* Costumers */
 
-.review__row {
+.costumers__row {
   display: flex;
   margin: -20px -15px;
   justify-content: space-between;
 }
-.review__text {
+.costumers__text {
   background: #e2e2e2;
   border-radius: 10px;
   color: #86878b;
@@ -201,7 +319,7 @@ hr {
   position: relative;
   text-align: center;
 }
-.review__text::after {
+.costumers__text::after {
   content: "";
   width: 0;
   height: 0;
@@ -230,9 +348,53 @@ hr {
 .costumer__info__profession {
   margin-bottom: 200px;
 }
+
+.stylish {
+  height: 442px;
+  background-blend-mode: multiply;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/stylishimg.png);
+  display: flex;
+  position: relative;
+}
+.title__stylish {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+.title__stylish p {
+  padding: 40px 0 110px 0;
+  color: #86878b;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.title__stylish hr {
+  border: none;
+  background-color: white;
+  height: 1.5px;
+  width: 180px;
+  margin-top: 70px;S
+}
+
+.stylish .intro__btn {
+  width: 370px;
+}
+
+.stylish a {
+margin: -72px auto;
+}
+
+
 .footer {
   height: 164px;
   background-color: black;
+  
 }
 .footer__nav-list {
   gap: 50px;
