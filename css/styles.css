@@ -7,6 +7,21 @@ body {
   font-size: 18px;
   text-align: center;
 }
+.title__contact {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.title__contact p {
+  padding: 40px 0 80px 0;
+  color: #86878b;
+  font-size: 18px;
+  text-align: center;
+}
 .title {
   font-family: "Raleway";
   font-style: normal;
@@ -53,18 +68,16 @@ a {
 /* HEADER */
 .header {
   background-color: #000000;
-  position: relative;
+  /* position: relative; */
 }
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .header__logo {
-  position: absolute;
-  left: 115px;
+  margin-left: -40px;
 }
 
 .header__nav ul {
@@ -123,7 +136,7 @@ a {
   margin-bottom: 42px;
 }
 
-.intro__btn {
+.main__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,35 +208,137 @@ a {
   line-height: 20px;
 }
 
-
-
 /* SOCIAL Start */
 .social {
-  background-color: #F8EFEF;
+  background-color: #f8efef;
 }
 .social p {
-padding-bottom: 18px;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-color: #86878B;
+  padding-bottom: 18px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878b;
 }
 .social h4 {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 700;
-font-size: 24px;
-line-height: 33px;
-padding-top: 30px;
+  font-size: 24px;
+  line-height: 33px;
+  padding-top: 30px;
 }
 .social__nav-list {
   gap: 50px;
   display: flex;
   align-items: center;
- justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* TABS */
+.tabs h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+.tabs p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+.tabs__label {
+  text-align: center;
+  padding: 10px 73px 10px 73px;
+  cursor: pointer;
+  color: #333333;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
 
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1;
+  width: 100%;
+  display: none;
+  border: 1px #c6cbcd solid;
+}
+
+.tabs__radio:checked + .tabs__label {
+  color: #333333;
+  border-top: 1px #c6cbcd solid;
+  border-left: 1px #c6cbcd solid;
+  border-right: 1px #c6cbcd solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  display: initial;
+}
+
+.tabs__radio:checked + .tabs__label:after {
+  content: "";
+  display: block;
+  width: 189px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+}
+
+.tabs__content__wrap {
+  display: flex;
+  column-gap: 30px;
+  padding-left: 100px;
+}
+
+.tabs__content__wrap h3 {
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.tabs__text {
+  width: 570px;
+}
+.tabs__text span {
+  display: block;
+}
+.space {
+  padding-top: 20px;
+}
+
+.tabblock .main__btn {
+  background-color: #ec7979;
+  margin-top: 27px;
+}
+
+.tabblock .main__btn:hover {
+  border-color: #ab4949;
+  background-color: #ab4949;
+  color: #ffffff;
+}
+
+.tabblock .main__btn:active {
+  background-color: #ec7979;
+  border: none;
+  color: #ffffff;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}
 /* Awesome */
 .awesome {
   text-align: center;
@@ -379,22 +494,108 @@ padding-top: 30px;
   background-color: white;
   height: 1.5px;
   width: 180px;
-  margin-top: 70px;S
-}
-
-.stylish .intro__btn {
-  width: 370px;
+  margin-top: 70px;
 }
 
 .stylish a {
-margin: -72px auto;
+  margin: -72px auto;
+}
+/* CONTACT US */
+
+.contacts {
+  padding-bottom: 50px;
+}
+.form__contact input[type="text"],
+.form__contact input[type="email"],
+.form__contact input[type="password"] {
+  width: 570px;
+  padding: 0;
+  height: 51px;
+  margin-top: 34px;
+  border: none;
+  border-bottom: #bdbdbd 1px solid;
+  outline: none;
+}
+.form__contact input[type="text"]:focus,
+.form__contact input[type="email"]:focus,
+.form__contact input[type="password"]:focus {
+  width: 570px;
+  border-color: #ec7979;
 }
 
+.form__contant__textarea {
+  display: flex;
+  align-items: flex-end;
+}
+
+.textarea {
+  width: 570px;
+  height: 206px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}
+
+.form__contact {
+  width: 100%;
+  height: 100%;
+  margin-top: 39px;
+}
+
+.form__contact__input {
+  display: flex;
+  column-gap: 30px;
+}
+
+.form__contact input[type="submit"] {
+  display: block;
+  position: relative;
+  background-color: #ec7979;
+  width: 370px;
+  height: 58px;
+  border-radius: 0;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+  background-color: #ec7979;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.form__contact input[type="submit"]:hover {
+  background: #ab4949;
+  transition-duration: 0.3s;
+}
+
+.form__contact input[type="submit"]:active {
+  background: #ec7979;
+  box-shadow: inset 0px 0px 10px #ab4949;
+}
+
+.form__contact textarea:focus {
+  width: 570px;
+  border-color: #ec7979;
+}
+
+.form__contact input[type="text"]::placeholder,
+.form__contact input[type="email"]::placeholder,
+.form__contact input[type="password"]::placeholder,
+.form__contact textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #bdbdbd;
+}
 
 .footer {
   height: 164px;
   background-color: black;
-  
 }
 .footer__nav-list {
   gap: 50px;
